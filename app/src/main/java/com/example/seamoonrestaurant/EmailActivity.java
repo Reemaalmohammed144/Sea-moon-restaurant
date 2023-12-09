@@ -21,7 +21,7 @@ public class EmailActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(EmailActivity.this, LoginActivity.class);
+                Intent intent = new Intent(EmailActivity.this, ResetPasswordActivity.class);
                 startActivity(intent);
             }
         });
