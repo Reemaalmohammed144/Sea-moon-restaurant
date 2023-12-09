@@ -16,11 +16,21 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         TextView signUpText = findViewById(R.id.signUpText);
+        TextView forgetPasswordText = findViewById(R.id.forgetPasswordText);
         signUpText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
                 Intent intent = new Intent(LoginActivity.this, SignUpActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        forgetPasswordText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(LoginActivity.this, EmailActivity.class);
                 startActivity(intent);
             }
         });

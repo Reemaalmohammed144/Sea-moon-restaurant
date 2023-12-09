@@ -26,5 +26,17 @@ public class SplashActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button createAccountBtn = findViewById(R.id.createAccountBtn);
+
+
+        createAccountBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(SplashActivity.this, SignUpActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
