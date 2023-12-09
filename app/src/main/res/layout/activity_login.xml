@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".LoginActivity">
+
+
+
+    <TextView
+        android:textColor="@color/fontColor"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="90dp"
+        android:id="@+id/largeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Welcome Back!"
+        android:textSize="34dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:textColor="@color/fontColor"
+            android:layout_marginLeft="70dp"
+            android:id="@+id/tagline1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/largeText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="@string/credential_line"/>
+
+
+        <ImageView
+            android:layout_marginLeft="100dp"
+            android:id="@+id/logoImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tagline1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/seamoon"/>
+
+
+        <TextView
+            android:textColor="@color/fontColor"
+            android:layout_marginLeft="100dp"
+            android:id="@+id/tagline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logoImageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="20dp"
+            android:text=" Sea Moon! Lets Enjoy together"/>
+
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:id="@+id/emailLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email Address"
+            android:layout_below="@id/tagline2"
+            android:layout_marginTop="16dp"/>
+
+
+        <EditText
+            android:layout_marginLeft="10dp"
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your email address"
+            android:layout_below="@id/emailLabel"
+            android:layout_marginTop="8dp"/>
+
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/passwordLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:layout_below="@id/emailEditText"
+            android:layout_marginTop="16dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/passwordLabel"
+            android:layout_marginTop="8dp">
+
+            <EditText
+                android:layout_marginLeft="10dp"
+                android:id="@+id/passwordEditText"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="Enter your password"
+                android:inputType="textPassword"/>
+
+
+            <ImageView
+                android:id="@+id/eyeIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/eyepassword"
+                android:layout_marginStart="8dp"
+                android:onClick="togglePasswordVisibility"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/rememberForgetLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/passwordEditText"
+            android:layout_marginTop="16dp"
+            tools:ignore="NotSibling">
+
+
+            <CheckBox
+
+                android:layout_marginLeft="10dp"
+                android:id="@+id/rememberCheckBox"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Remember Me"/>
+
+
+            <TextView
+                android:layout_marginRight="10dp"
+                android:id="@+id/forgetPasswordText"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Forget Password ?"
+                android:gravity="end"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/additionalTagline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Do not have an account? Sign Up ?"
+            android:layout_below="@id/rememberForgetLayout"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true"/>
+
+
+        <Button
+
+            android:layout_marginLeft="110dp"
+            android:textColor="@color/fontColor"
+            android:background="@drawable/round_button_background"
+            android:id="@+id/loginButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:layout_below="@id/additionalTagline"
+            android:layout_marginTop="25dp"/>
+
+
+
+
+</LinearLayout>

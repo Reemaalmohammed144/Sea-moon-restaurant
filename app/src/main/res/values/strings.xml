@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">SeaMoonRestaurant</string>
     <string name="tag_line">Welcome to Sea Moon! Lets Enjoy together</string>
+    <string name="credential_line">Enter your Credentials to access your account</string>
 </resources>
