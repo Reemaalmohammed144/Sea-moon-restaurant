@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".SignUpActivity">
+
+
+
+
+
+
+    <ImageView
+        android:layout_marginLeft="100dp"
+        android:id="@+id/logoImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tagline1"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/seamoon"/>
+
+
+    <TextView
+        android:textColor="@color/fontColor"
+        android:layout_marginLeft="70dp"
+        android:id="@+id/tagline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/tag_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:id="@+id/firstNameLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="First Name:"
+                android:layout_below="@id/tagline2"
+                android:layout_marginTop="16dp"/>
+
+
+            <EditText
+                android:layout_marginLeft="10dp"
+                android:id="@+id/firstNameEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="First Name"
+                android:layout_below="@id/phoneLabel"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="190dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:id="@+id/lastNameLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last Name:"
+                android:layout_below="@id/tagline2"
+                android:layout_marginTop="16dp"/>
+
+
+            <EditText
+                android:layout_marginLeft="10dp"
+                android:id="@+id/lastNameEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Last Name"
+                android:layout_below="@id/phoneLabel"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:id="@+id/emailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email Address"
+        android:layout_below="@id/tagline2"
+        android:layout_marginTop="16dp"/>
+
+
+    <EditText
+        android:layout_marginLeft="10dp"
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your email address"
+        android:layout_below="@id/emailLabel"
+        android:layout_marginTop="8dp"/>
+
+
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:id="@+id/phoneLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Number:"
+        android:layout_below="@id/tagline2"
+        android:layout_marginTop="16dp"/>
+
+
+    <EditText
+        android:layout_marginLeft="10dp"
+        android:id="@+id/phoneEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your phone number"
+        android:layout_below="@id/phoneLabel"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:id="@+id/passwordLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:layout_below="@id/emailEditText"
+        android:layout_marginTop="16dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/passwordLabel"
+        android:layout_marginTop="8dp">
+
+        <EditText
+            android:layout_marginLeft="10dp"
+            android:id="@+id/passwordEditText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="Enter your password"
+            android:inputType="textPassword"/>
+
+
+        <ImageView
+            android:id="@+id/eyeIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/eyepassword"
+            android:layout_marginStart="8dp"
+            android:onClick="togglePasswordVisibility"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:id="@+id/rePasswordLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Re-Password: "
+        android:layout_below="@id/emailEditText"
+        android:layout_marginTop="16dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/rePasswordLabel"
+        android:layout_marginTop="8dp">
+
+
+
+        <EditText
+            android:layout_marginLeft="10dp"
+            android:id="@+id/confirmPasswordEditText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="Rewrite your Password"
+            android:inputType="textPassword"/>
+
+
+        <ImageView
+            android:id="@+id/rewriteEyeIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/eyepassword"
+            android:layout_marginStart="8dp"
+            android:onClick="togglePasswordVisibility"/>
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:id="@+id/loginText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account? Login"
+        android:layout_below="@id/rememberForgetLayout"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+
+
+    <Button
+
+        android:layout_marginLeft="110dp"
+        android:textColor="@color/fontColor"
+        android:background="@drawable/round_button_background"
+        android:id="@+id/signUpBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Create Account"
+        android:layout_below="@id/loginText"
+        android:layout_marginTop="25dp"/>
+
+
+
+
+</LinearLayout>
